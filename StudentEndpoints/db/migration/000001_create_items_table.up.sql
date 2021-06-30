@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS student(
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    Skills TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    );
