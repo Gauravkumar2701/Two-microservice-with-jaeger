@@ -1,15 +1,15 @@
 package db
 
 import (
-"database/sql"
-"fmt"
-"log"
+	"database/sql"
+	"fmt"
+	"log"
 
 	_ "github.com/lib/pq"
 )
 
 const (
-	HOST = "localhost"
+	HOST = "database"
 	PORT = 5432
 )
 
@@ -36,4 +36,3 @@ func Initialize(username, password, database string) (Database, error) {
 	log.Println("Database connection established")
 	return db, nil
 }
-
