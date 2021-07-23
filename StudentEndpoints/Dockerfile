@@ -1,4 +1,4 @@
-FROM golang:1.14.6-alpine3.12 as builder
+FROM golang:latest as builder
 COPY go.mod go.sum /go/src/StudentEndpoints/
 WORKDIR /go/src/StudentEndpoints
 RUN go mod download
